@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - run: echo "NAME=Alice" >> $GITHUB_ENV
       - uses: ./
         with:
-          name: Foo
+          name: ${{ env.NAME }}
+      - run: echo "NAME=Bob" >> $GITHUB_ENV
