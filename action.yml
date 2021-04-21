@@ -1,0 +1,11 @@
+name: 'test-env'
+description: ''
+inputs:
+  name:
+    description: 'Your name'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/main/index.js'
+  post-if: 'success()'
+  post: 'dist/post/index.js'
