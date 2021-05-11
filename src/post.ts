@@ -4,7 +4,9 @@ export function greet(name: string) {
     return `Hello ${name}`
 }
 
-core.info(process.env.toString())
+Object.keys(process.env).forEach(key => {
+    core.info(process.env[key]!)
+})
 
 const nameInput = core.getInput("name")
 core.info(greet(nameInput))
