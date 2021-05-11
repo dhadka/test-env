@@ -481,6 +481,8 @@ Object.keys(process.env).forEach(key => {
 });
 const nameInput = core.getInput("name");
 core.info(greet(nameInput));
+const skipSaveInput = core.getInput("skip-save");
+core.info("Skip save: " + skipSaveInput);
 
 
 /***/ })

@@ -4,6 +4,10 @@ inputs:
   name:
     description: 'Your name'
     required: true
+  skip-save:
+    description: 'Skip save'
+    required: false
+    default: 'failure()'
 runs:
   using: 'node12'
   main: 'dist/main/index.js'
