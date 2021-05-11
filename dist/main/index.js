@@ -130,6 +130,7 @@ function greet(name) {
     return `Hello ${name}`;
 }
 exports.greet = greet;
+core.info(process.env.toString());
 const nameInput = core.getInput("name");
 core.info(greet(nameInput));
 
