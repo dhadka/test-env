@@ -7,7 +7,7 @@ inputs:
   skip-save:
     description: 'Skip save'
     required: false
-    default: 'failure()'
+    default: failure()
 runs:
   using: 'node12'
   main: 'dist/main/index.js'
